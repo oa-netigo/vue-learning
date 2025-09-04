@@ -6,7 +6,7 @@ const add = (x, y) => x + y;
 
 <!-- Template structure -->
 <template>
-  <!-- Text interpolation (binding data) -->
+  <!-- Text interpolation -->
   <h1>{{ message }}</h1>
   <p>2 + 3 = {{ add(2, 3) }}</p>
 </template>
