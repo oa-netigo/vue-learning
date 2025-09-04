@@ -5,6 +5,7 @@ const message = "Hello World";
 
 <!-- Template structure -->
 <template>
+  <!-- Text interpolation (binding data) -->
   <h1>{{ message }}</h1>
 </template>
 
