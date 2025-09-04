@@ -1,38 +1,20 @@
-<!-- Javascript logic -->
 <script setup>
-const message = "Hello World";
-const add = (x, y) => x + y;
+// Import reactive from Vue to create reactive state
+import { reactive } from 'vue';
 
-const website = "https://vuejs.org";
-
-const imgUrl = "https://placehold.co/600x400";
-const imgAlt = "Lorem ipsum";
-const imgWidth = 600;
-const imgHeight = 400;
+// Create a reactive object to hold the counter state
+const counter = reactive({ count: 0 });
 </script>
 
-<!-- Template structure -->
 <template>
-  <!-- Text interpolation -->
-  <h1>{{ message }}</h1>
-  <p>2 + 3 = {{ add(2, 3) }}</p>
+  <div>
+    <h1>Count: {{ counter.count }}</h1>
 
-  <!-- attribute binding (old way)-->
-  <a v-bind:href="website" target="_blank">vuejs</a>
-
-  <br>
-
-  <!-- attribute binding (new way)-->
-  <a :href="website" target="_blank">vuejs</a>
-
-  <br>
-
-  <img :src="imgUrl" :alt="imgAlt" :width="imgWidth" :height="imgHeight">
+    <!-- event listener @click and inline expression -->
+    <button @click="counter.count++">Increment</button>
+    <button @click="counter.count--">Decrement</button>
+  </div>
 </template>
 
-<!-- Component specific styles -->
 <style scoped>
-h1 {
-  color: blue;
-}
 </style>
