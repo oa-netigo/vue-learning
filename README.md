@@ -1,29 +1,39 @@
+
 # vue-learning
 
-This template should help get you started developing with Vue 3 in Vite.
+Dieses Projekt ist eine Lernumgebung für Vue 3 mit Vite.
+Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen von Vue.js:
 
-## Recommended IDE Setup
+- Reaktivität (ref, reactive)
+- Komponenten
+- Computed Properties
+- Bedingte Darstellung (v-if, v-show)
+- Event Handling
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Empfohlene Entwicklungsumgebung
 
-## Customize configuration
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (Vetur sollte deaktiviert werden).
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Projekt starten
 
-## Project Setup
+Installiere die Abhängigkeiten:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Starte die Entwicklungsumgebung mit Hot-Reload:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Baue das Projekt für die Produktion:
 
 ```sh
 npm run build
 ```
+
+## Weitere Infos
+
+Siehe die [Vite Dokumentation](https://vite.dev/config/) für weitere Konfigurationsmöglichkeiten.
