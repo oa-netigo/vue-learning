@@ -5,6 +5,8 @@
  * an den Inhalt eines HTML-Elements in einem Template.
  * Sie ermöglicht es, den Wert eines JavaScript-Ausdrucks oder einer Variablen
  * innerhalb des Markups anzuzeigen.
+ *
+ * Ein Vergleich in Vanilla Javascript: https://codepen.io/om-ab-n/pen/dPYrddv
  */
 
 <script setup>

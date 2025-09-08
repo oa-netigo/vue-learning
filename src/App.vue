@@ -1,6 +1,6 @@
 <script setup>
-import Start from './topics/Start.vue';
-// import TextInterpolation from './topics/TextInterpolation.vue';
+// import Start from './topics/Start.vue';
+import TextInterpolation from './topics/TextInterpolation.vue';
 // import Component from './topics/Component.vue';
 // import AttributeBinding from './topics/AttributeBinding.vue';
 // import ReactivityExampleOne from './topics/ReactivityExampleOne.vue';
@@ -13,8 +13,8 @@ import Start from './topics/Start.vue';
 </script>
 
 <template>
-  <Start />
-  <!-- <TextInterpolation /> -->
+  <!-- <Start /> -->
+  <TextInterpolation />
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
   <!-- <ReactivityExampleOne /> -->

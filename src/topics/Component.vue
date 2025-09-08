@@ -15,7 +15,7 @@
  * um verschiedene Dinge zu bauen.
  */
 
-</script setup>
+<script setup>
 // Die folgende Zeile importiert die Komponente CallToAction aus src/components/CallToAction.vue.
 // Das @ steht für den src-Ordner (Alias), damit du nicht den ganzen Pfad schreiben musst.
 import CallToAction from '@/components/CallToAction.vue';
