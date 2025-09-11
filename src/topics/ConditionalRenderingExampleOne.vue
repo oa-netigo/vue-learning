@@ -1,4 +1,3 @@
-```js
 /*
  * Bedingtes Rendering (Conditional Rendering)
  *
@@ -11,7 +10,6 @@
  * - v-else-if (Bedingung)
  * - v-else
  */
-```
 
 <script setup>
 const isTrue = true;
