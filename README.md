@@ -4,10 +4,19 @@
 Dieses Projekt ist eine Lernumgebung für Vue 3 mit Vite.
 Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen von Vue.js:
 
+**Themenübersicht:**
+
+- Textinterpolation
+- Attribute Binding
 - Reaktivität (ref, reactive)
-- Komponenten
 - Computed Properties
+- Komponenten
+- Props & Dynamic Props
+- Statische Props
+- List Rendering
 - Bedingte Darstellung (v-if, v-show)
+- Slots & Fallback Slots
+- Named Slots
 - Event Handling
 
 ## Empfohlene Entwicklungsumgebung
