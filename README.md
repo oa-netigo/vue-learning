@@ -18,6 +18,11 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 - Slots & Fallback Slots
 - Named Slots
 - Event Handling
+- Prop Drilling
+- Provide & Inject
+- Watchers
+- Template Refs
+- Data Fetching
 
 ## Empfohlene Entwicklungsumgebung
 
