@@ -10,7 +10,6 @@ import {
 } from 'vue'
 
 const counter = ref(0)
-const logs = ref([])
 const startTime = ref(0)
 const updateCount = ref(0)
 
@@ -23,137 +22,62 @@ const emit = defineEmits(['log-message'])
 // Hilfsfunktion zum Loggen
 function addLog(message) {
   const timestamp = new Date().toLocaleTimeString()
-  emit('log-message', `${timestamp}: ${message}`)
-  console.log(`[Lifecycle] ${message}`)
+  emit('log-message', `${timestamp}: ${message}`);
 }
 
 // CREATION PHASE
-console.log('1. Component Script Setup - Komponente wird initialisiert')
 addLog('Component Setup - Script wird ausgeführt')
 startTime.value = Date.now()
 
 // MOUNTING PHASE
 onBeforeMount(() => {
-  addLog('onBeforeMount - Vor dem ersten Render')
-  // DOM noch nicht verfügbar
-  // Hier: Letzte Vorbereitungen vor dem Rendern
+  addLog('onBeforeMount - Vor dem ersten Render');
 })
 
 onMounted(() => {
-  addLog('onMounted - Nach dem ersten Render')
-  // DOM ist jetzt verfügbar
-  // Hier: DOM Manipulationen, API Calls, Timer starten
+  addLog('onMounted - Nach dem ersten Render');
   const loadTime = Date.now() - startTime.value
-  addLog(`Komponente geladen in ${loadTime}ms`)
+  addLog(`Komponente geladen in ${loadTime}ms`);
 })
 
 // UPDATING PHASE
 onBeforeUpdate(() => {
   updateCount.value++
-  addLog('onBeforeUpdate - Vor dem Re-Render')
-  // Wird vor jedem Re-Render aufgerufen
-  // Hier: Zustand vor Update speichern
+  addLog('onBeforeUpdate - Vor dem Re-Render');
 })
 
 onUpdated(() => {
-  addLog('onUpdated - Nach dem Re-Render')
-  // DOM wurde aktualisiert
-  // Hier: DOM Operationen nach Update
+  addLog('onUpdated - Nach dem Re-Render');
 })
 
 // UNMOUNTING PHASE
 onBeforeUnmount(() => {
-  addLog('onBeforeUnmount - Vor dem Entfernen')
-  // Komponente wird gleich entfernt
-  // Hier: Cleanup vorbereiten
+  addLog('onBeforeUnmount - Vor dem Entfernen');
 })
 
 onUnmounted(() => {
-  addLog('onUnmounted - Nach dem Entfernen')
-  // Komponente wurde entfernt
-  // Hier: Event Listeners entfernen, Timer stoppen
-  console.log('Komponente wurde unmounted')
+  addLog('onUnmounted - Nach dem Entfernen');
 })
 
 // Funktionen
 function incrementCounter() {
   counter.value++
-  // Triggert onBeforeUpdate und onUpdated
 }
-
-// Simuliere API Call
-onMounted(async () => {
-  setTimeout(() => {
-    addLog('Starte API Call...')
-  }, 100)
-
-  // Simuliere Verzögerung
-  await new Promise(resolve => setTimeout(resolve, 1000))
-
-  setTimeout(() => {
-    addLog('API Call beendet')
-  }, 100)
-})
 </script>
 
 <template>
-  <div class="lifecycle-demo">
-    <div class="demo-content">
-      <h3>📊 Demo Komponente</h3>
-      <p>Counter: {{ counter }}</p>
-      <p>Updates: {{ updateCount }}</p>
-      <button @click="incrementCounter" class="demo-button">
-        Counter erhöhen (triggert Update Hooks)
-      </button>
-
-      <div class="demo-info">
-        <p>✅ Diese Komponente demonstriert alle Lifecycle Hooks</p>
-        <p>🔄 Jeder Counter-Click triggert onBeforeUpdate & onUpdated</p>
-        <p>🗑️ Der Unmount-Button triggert onBeforeUnmount & onUnmounted</p>
-      </div>
-    </div>
+  <div class="counter">
+    <p>Counter: {{ counter }}</p>
+    <button @click="incrementCounter" class="demo-button">
+      Counter erhöhen
+    </button>
   </div>
 </template>
 
 <style scoped>
-.lifecycle-demo {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.demo-content {
-  text-align: center;
-}
-
-.demo-button {
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid white;
+.counter {
+  border: 1px solid #ccc;
+  padding: 10px;
   border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s;
-  margin: 10px;
-}
-
-.demo-button:hover {
-  background-color: white;
-  color: #667eea;
-}
-
-.demo-info {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-
-.demo-info p {
-  margin: 5px 0;
-  font-size: 14px;
 }
 </style>
