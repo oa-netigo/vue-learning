@@ -3,25 +3,19 @@ import { ref, onMounted } from 'vue'
 
 const counter = ref(0)
 const isLoading = ref(true)
-const step = ref(1)
 
-// Simuliere langsame Komponenten-Initialisierung
 onMounted(async () => {
-  console.log('AsyncCounter wird geladen...')
-
-  // Simuliere API Call oder schwere Berechnungen
+  // Simuliere Ladezeit
   await new Promise(resolve => setTimeout(resolve, 1500))
-
   isLoading.value = false
-  console.log('AsyncCounter geladen!')
 })
 
 function increment() {
-  counter.value += step.value
+  counter.value ++;
 }
 
 function decrement() {
-  counter.value -= step.value
+  counter.value --;
 }
 
 function reset() {
@@ -31,7 +25,7 @@ function reset() {
 
 <template>
   <div class="async-counter">
-    <h3>🔢 Async Counter Component</h3>
+    <h3>Async Counter Component</h3>
 
     <div v-if="isLoading" class="loading">
       <div class="spinner"></div>
@@ -45,31 +39,16 @@ function reset() {
 
       <div class="controls">
         <button @click="decrement" class="btn-decrement">
-          -{{ step }}
+          -
         </button>
 
         <button @click="increment" class="btn-increment">
-          +{{ step }}
+          +
         </button>
 
         <button @click="reset" class="btn-reset">
           Reset
         </button>
-      </div>
-
-      <div class="step-control">
-        <label>Schrittgröße:</label>
-        <input
-          v-model.number="step"
-          type="number"
-          min="1"
-          max="10"
-        />
-      </div>
-
-      <div class="info">
-        <p>✅ Diese Komponente wurde asynchron geladen!</p>
-        <p>🚀 Code Splitting in Aktion</p>
       </div>
     </div>
   </div>
@@ -77,8 +56,6 @@ function reset() {
 
 <style scoped>
 .async-counter {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -90,7 +67,7 @@ function reset() {
 
 .spinner {
   border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top: 4px solid white;
+  border-top: 4px solid black;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -137,21 +114,6 @@ function reset() {
   font-size: 16px;
   font-weight: bold;
   transition: all 0.3s;
-}
-
-.btn-increment {
-  background-color: #4caf50;
-  color: white;
-}
-
-.btn-decrement {
-  background-color: #f44336;
-  color: white;
-}
-
-.btn-reset {
-  background-color: #ff9800;
-  color: white;
 }
 
 .controls button:hover {
