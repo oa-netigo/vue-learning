@@ -28,8 +28,8 @@
 // Erweiterte Themen
 // import RouterExample from './topics/RouterExample.vue';
 // import FormsValidation from './topics/FormsValidation.vue';
-import LifecycleHooks from './topics/LifecycleHooks.vue';
-// import CustomDirectives from './topics/CustomDirectives.vue';
+// import LifecycleHooks from './topics/LifecycleHooks.vue';
+import CustomDirectives from './topics/CustomDirectives.vue';
 // import DynamicComponents from './topics/DynamicComponents.vue';
 // import TransitionsAnimations from './topics/TransitionsAnimations.vue';
 </script>
@@ -67,8 +67,8 @@ import LifecycleHooks from './topics/LifecycleHooks.vue';
 
   <!-- <RouterExample /> -->
   <!-- <FormsValidation /> -->
-  <LifecycleHooks />
-  <!-- <CustomDirectives /> -->
+  <!-- <LifecycleHooks /> -->
+  <CustomDirectives />
   <!-- <DynamicComponents /> -->
   <!-- <TransitionsAnimations /> -->
 </template>
