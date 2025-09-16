@@ -17,6 +17,8 @@ import Start from './topics/Start.vue';
 // import Slots from './topics/Slots.vue';
 // import FallbackSlots from './topics/FallbackSlots.vue';
 // import NamedSlots from './topics/NamedSlots.vue';
+// import PropDrilling from './topics/PropDrilling.vue';
+// import ProvideAndInject from './topics/ProvideAndInject.vue';
 </script>
 
 <template>
@@ -38,4 +40,6 @@ import Start from './topics/Start.vue';
   <!-- <Slots /> -->
   <!-- <FallbackSlots /> -->
   <!-- <NamedSlots /> -->
+  <!-- <PropDrilling /> -->
+  <!-- <ProvideAndInject /> -->
 </template>
