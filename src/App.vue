@@ -1,5 +1,6 @@
 <script setup>
-import Start from './topics/Start.vue';
+// import Start from './topics/Start.vue';
+// Basis Themen
 // import TextInterpolation from './topics/TextInterpolation.vue';
 // import Component from './topics/Component.vue';
 // import AttributeBinding from './topics/AttributeBinding.vue';
@@ -23,10 +24,20 @@ import Start from './topics/Start.vue';
 // import TemplateRefsExampleOne from './topics/TemplateRefsExampleOne.vue';
 // import TemplateRefsExampleTwo from './topics/TemplateRefsExampleTwo.vue';
 // import DataFetch from './topics/DataFetch.vue';
+
+// Erweiterte Themen
+// import RouterExample from './topics/RouterExample.vue';
+// import FormsValidation from './topics/FormsValidation.vue';
+import LifecycleHooks from './topics/LifecycleHooks.vue';
+// import CustomDirectives from './topics/CustomDirectives.vue';
+// import DynamicComponents from './topics/DynamicComponents.vue';
+// import TransitionsAnimations from './topics/TransitionsAnimations.vue';
 </script>
 
 <template>
-  <Start />
+  <!-- <Start /> -->
+
+  <!-- ===== BASIS THEMEN ===== -->
   <!-- <TextInterpolation /> -->
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
@@ -50,4 +61,14 @@ import Start from './topics/Start.vue';
   <!-- <TemplateRefsExampleOne /> -->
   <!-- <TemplateRefsExampleTwo /> -->
   <!-- <DataFetch /> -->
+
+  <!-- ===== ERWEITERTE THEMEN ===== -->
+  <!-- Uncomment the topics you want to explore: -->
+
+  <!-- <RouterExample /> -->
+  <!-- <FormsValidation /> -->
+  <LifecycleHooks />
+  <!-- <CustomDirectives /> -->
+  <!-- <DynamicComponents /> -->
+  <!-- <TransitionsAnimations /> -->
 </template>

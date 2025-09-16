@@ -6,6 +6,7 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 
 **Themenübersicht:**
 
+### Basis Themen
 - Textinterpolation
 - Attribute Binding
 - Reaktivität (ref, reactive)
@@ -23,6 +24,14 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 - Watchers
 - Template Refs
 - Data Fetching
+
+### Erweiterte Themen ✨
+- **Routing mit Vue Router** - Single Page Application Navigation
+- **Formulare & Validierung** - Umfassende Form-Handling mit Validierung
+- **Lifecycle Hooks im Detail** - Komponentenlebenszyklus verstehen
+- **Custom Directives** - Eigene v-Direktiven erstellen
+- **Dynamische Komponenten & Async Components** - Code Splitting und dynamisches Laden
+- **Transitions & Animationen** - Ansprechende UI-Übergänge
 
 ## Empfohlene Entwicklungsumgebung
 
@@ -46,6 +55,21 @@ Baue das Projekt für die Produktion:
 
 ```sh
 npm run build
+```
+
+## Benutzung
+
+Um ein bestimmtes Thema zu erkunden, uncomment einfach die entsprechende Komponente in `src/App.vue`:
+
+```vue
+<!-- Beispiel: Routing erkunden -->
+<RouterExample />
+
+<!-- Beispiel: Formulare & Validierung -->
+<FormsValidation />
+
+<!-- Beispiel: Lifecycle Hooks -->
+<LifecycleHooks />
 ```
 
 ## Weitere Infos
