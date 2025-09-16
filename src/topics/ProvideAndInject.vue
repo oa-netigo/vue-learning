@@ -12,7 +12,15 @@
 
 
 <script setup>
+import { provide } from 'vue';
+import SchoolComponent from '@/components/SchoolComponent.vue';
+
+// Provide & Inject Beispiel
+provide('studentName', 'Peter Parker');
+provide('studentAge', 22);
+provide('studentModules', ['Sport', 'IT', 'Biologie']);
 </script>
 
 <template>
+  <SchoolComponent/>
 </template>
