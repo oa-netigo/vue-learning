@@ -26,12 +26,12 @@
 // import DataFetch from './topics/DataFetch.vue';
 
 // Erweiterte Themen
-// import RouterExample from './topics/RouterExample.vue';
+// import Router from './topics/Router.vue';
 // import FormsValidation from './topics/FormsValidation.vue';
-import LifecycleHooks from './topics/LifecycleHooks.vue';
+// import LifecycleHooks from './topics/LifecycleHooks.vue';
 // import CustomDirectives from './topics/CustomDirectives.vue';
 // import DynamicComponents from './topics/DynamicComponents.vue';
-// import TransitionsAnimations from './topics/TransitionsAnimations.vue';
+import TransitionsAnimations from './topics/TransitionsAnimations.vue';
 </script>
 
 <template>
@@ -65,10 +65,10 @@ import LifecycleHooks from './topics/LifecycleHooks.vue';
   <!-- ===== ERWEITERTE THEMEN ===== -->
   <!-- Uncomment the topics you want to explore: -->
 
-  <!-- <RouterExample /> -->
+  <Router />
   <!-- <FormsValidation /> -->
-  <LifecycleHooks />
+  <!-- <LifecycleHooks /> -->
   <!-- <CustomDirectives /> -->
   <!-- <DynamicComponents /> -->
-  <!-- <TransitionsAnimations /> -->
+  <TransitionsAnimations />
 </template>

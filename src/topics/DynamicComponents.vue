@@ -5,7 +5,7 @@
 
 /*
  * Dynamic Components Features:
- * - <component :is="componentName">
+ * - component :is="componentName"
  * - Keep-alive für Zustand erhalten
  * - Async Components für Code Splitting
  * - Lazy Loading von Komponenten
@@ -91,11 +91,11 @@ async function loadDynamicComponent(componentPath) {
 
 <template>
   <div>
-    <h2>🔄 Dynamische & Async Components</h2>
+    <h1>Dynamic Components</h1>
 
     <!-- Tab Navigation -->
     <div class="tab-navigation">
-      <h3>Dynamische Tab Komponenten</h3>
+      <h2>Dynamische Tab Komponenten</h2>
       <div class="tabs">
         <button
           v-for="tab in Object.keys(tabComponents)"
@@ -201,232 +201,8 @@ async function loadDynamicComponent(componentPath) {
         </div>
       </div>
     </div>
-
-    <!-- Code Examples -->
-    <div class="code-examples">
-      <h3>Implementation Examples</h3>
-
-      <div class="code-example">
-        <h4>Dynamische Komponente:</h4>
-        <pre><code>&lt;component :is="currentComponent" /&gt;</code></pre>
-      </div>
-
-      <div class="code-example">
-        <h4>Mit Keep-Alive:</h4>
-        <pre><code>&lt;keep-alive&gt;
-  &lt;component :is="currentComponent" /&gt;
-&lt;/keep-alive&gt;</code></pre>
-      </div>
-
-      <div class="code-example">
-        <h4>Async Component:</h4>
-        <pre><code>const AsyncComp = defineAsyncComponent(() =>
-  import('./MyComponent.vue')
-)</code></pre>
-      </div>
-
-      <div class="code-example">
-        <h4>Async mit Loading State:</h4>
-        <pre><code>const AsyncComp = defineAsyncComponent({
-  loader: () => import('./MyComponent.vue'),
-  loadingComponent: LoadingSpinner,
-  errorComponent: ErrorComponent,
-  delay: 200,
-  timeout: 5000
-})</code></pre>
-      </div>
-    </div>
   </div>
 </template>
 
 <style scoped>
-.tab-navigation {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin: 15px 0;
-  flex-wrap: wrap;
-}
-
-.tab-button {
-  padding: 10px 15px;
-  border: 1px solid #ddd;
-  background-color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.tab-button.active {
-  background-color: #42b883;
-  color: white;
-  border-color: #42b883;
-}
-
-.tab-button:hover {
-  background-color: #e9ecef;
-}
-
-.tab-button.active:hover {
-  background-color: #369870;
-}
-
-.visit-count {
-  font-size: 12px;
-  opacity: 0.8;
-}
-
-.keep-alive-control {
-  margin: 15px 0;
-}
-
-.keep-alive-control label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
-
-.tab-content {
-  border: 2px solid #42b883;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 15px 0;
-  min-height: 200px;
-}
-
-.async-section {
-  margin: 30px 0;
-}
-
-.async-controls {
-  display: flex;
-  gap: 10px;
-  margin: 15px 0;
-  flex-wrap: wrap;
-}
-
-.async-button {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.async-button:hover {
-  background-color: #0056b3;
-}
-
-.clear-button {
-  padding: 10px 15px;
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.clear-button:hover {
-  background-color: #545b62;
-}
-
-.async-content {
-  border: 2px solid #007bff;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 15px 0;
-  min-height: 150px;
-}
-
-.loading {
-  text-align: center;
-  padding: 20px;
-  color: #6c757d;
-  font-style: italic;
-}
-
-.no-component {
-  text-align: center;
-  padding: 20px;
-  color: #6c757d;
-  font-style: italic;
-}
-
-.state-info {
-  margin: 30px 0;
-}
-
-.state-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin: 15px 0;
-}
-
-.state-card {
-  background-color: #e8f5e8;
-  padding: 15px;
-  border-radius: 5px;
-  border-left: 4px solid #42b883;
-}
-
-.state-card h4 {
-  margin: 0 0 10px 0;
-  color: #2c3e50;
-}
-
-.state-card p {
-  margin: 5px 0;
-  font-weight: bold;
-}
-
-.state-card ul {
-  margin: 5px 0;
-  padding-left: 20px;
-}
-
-.state-card li {
-  margin: 5px 0;
-}
-
-.state-card small {
-  color: #6c757d;
-  font-size: 11px;
-}
-
-.code-examples {
-  margin: 30px 0;
-}
-
-.code-example {
-  background-color: #1e1e1e;
-  color: #e6e6e6;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 15px 0;
-}
-
-.code-example h4 {
-  margin: 0 0 10px 0;
-  color: #42b883;
-}
-
-.code-example pre {
-  margin: 0;
-  font-family: 'Courier New', monospace;
-  font-size: 13px;
-  overflow-x: auto;
-}
-
-.code-example code {
-  color: #e6e6e6;
-}
 </style>
