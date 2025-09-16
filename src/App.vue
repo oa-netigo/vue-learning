@@ -1,6 +1,6 @@
 <script setup>
-// import Start from './topics/Start.vue';
 // Basis Themen
+import Start from './topics/Start.vue';
 // import TextInterpolation from './topics/TextInterpolation.vue';
 // import Component from './topics/Component.vue';
 // import AttributeBinding from './topics/AttributeBinding.vue';
@@ -26,17 +26,17 @@
 // import DataFetch from './topics/DataFetch.vue';
 
 // Erweiterte Themen
-import Router from './topics/Router.vue';
+// import Router from './topics/Router.vue';
 // import FormsValidation from './topics/FormsValidation.vue';
 // import LifecycleHooks from './topics/LifecycleHooks.vue';
 // import CustomDirectives from './topics/CustomDirectives.vue';
-import DynamicComponents from './topics/DynamicComponents.vue';
+// import DynamicComponents from './topics/DynamicComponents.vue';
 </script>
 
 <template>
-  <!-- <Start /> -->
+  <!-- Basis Themen -->
 
-  <!-- ===== BASIS THEMEN ===== -->
+   <Start />
   <!-- <TextInterpolation /> -->
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
@@ -61,12 +61,11 @@ import DynamicComponents from './topics/DynamicComponents.vue';
   <!-- <TemplateRefsExampleTwo /> -->
   <!-- <DataFetch /> -->
 
-  <!-- ===== ERWEITERTE THEMEN ===== -->
-  <!-- Uncomment the topics you want to explore: -->
+  <!-- Erweiterte Themen -->
 
   <!-- <Router /> -->
   <!-- <FormsValidation /> -->
   <!-- <LifecycleHooks /> -->
   <!-- <CustomDirectives /> -->
-  <DynamicComponents />
+  <!-- <DynamicComponents /> -->
 </template>
