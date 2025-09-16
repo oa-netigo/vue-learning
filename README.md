@@ -46,3 +46,7 @@ npm run build
 ## Weitere Infos
 
 Siehe die [Vite Dokumentation](https://vite.dev/config/) für weitere Konfigurationsmöglichkeiten.
+
+## Copyright
+
+Omar Abdullah

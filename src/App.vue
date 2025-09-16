@@ -1,5 +1,5 @@
 <script setup>
-import Start from './topics/Start.vue';
+// import Start from './topics/Start.vue';
 // import TextInterpolation from './topics/TextInterpolation.vue';
 // import Component from './topics/Component.vue';
 // import AttributeBinding from './topics/AttributeBinding.vue';
@@ -19,10 +19,14 @@ import Start from './topics/Start.vue';
 // import NamedSlots from './topics/NamedSlots.vue';
 // import PropDrilling from './topics/PropDrilling.vue';
 // import ProvideAndInject from './topics/ProvideAndInject.vue';
+// import Watchers from './topics/Watchers.vue';
+// import TemplateRefsExampleOne from './topics/TemplateRefsExampleOne.vue';
+// import TemplateRefsExampleTwo from './topics/TemplateRefsExampleTwo.vue';
+import DataFetch from './topics/DataFetch.vue';
 </script>
 
 <template>
-  <Start />
+  <!-- <Start /> -->
   <!-- <TextInterpolation /> -->
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
@@ -42,4 +46,8 @@ import Start from './topics/Start.vue';
   <!-- <NamedSlots /> -->
   <!-- <PropDrilling /> -->
   <!-- <ProvideAndInject /> -->
+  <!-- <Watchers /> -->
+  <!-- <TemplateRefsExampleOne /> -->
+  <!-- <TemplateRefsExampleTwo /> -->
+  <DataFetch />
 </template>
