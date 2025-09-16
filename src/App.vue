@@ -1,5 +1,5 @@
 <script setup>
-// import Start from './topics/Start.vue';
+import Start from './topics/Start.vue';
 // import TextInterpolation from './topics/TextInterpolation.vue';
 // import Component from './topics/Component.vue';
 // import AttributeBinding from './topics/AttributeBinding.vue';
@@ -22,11 +22,11 @@
 // import Watchers from './topics/Watchers.vue';
 // import TemplateRefsExampleOne from './topics/TemplateRefsExampleOne.vue';
 // import TemplateRefsExampleTwo from './topics/TemplateRefsExampleTwo.vue';
-import DataFetch from './topics/DataFetch.vue';
+// import DataFetch from './topics/DataFetch.vue';
 </script>
 
 <template>
-  <!-- <Start /> -->
+  <Start />
   <!-- <TextInterpolation /> -->
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
@@ -49,5 +49,5 @@ import DataFetch from './topics/DataFetch.vue';
   <!-- <Watchers /> -->
   <!-- <TemplateRefsExampleOne /> -->
   <!-- <TemplateRefsExampleTwo /> -->
-  <DataFetch />
+  <!-- <DataFetch /> -->
 </template>
