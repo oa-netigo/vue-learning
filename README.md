@@ -7,23 +7,23 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 **Themenübersicht:**
 
 ### Basis Themen
-- Textinterpolation
-- Attribute Binding
-- Reaktivität (ref, reactive)
-- Computed Properties
-- Komponenten
-- Props & Dynamic Props
-- Statische Props
-- List Rendering
-- Bedingte Darstellung (v-if, v-show)
-- Slots & Fallback Slots
-- Named Slots
-- Event Handling
-- Prop Drilling
-- Provide & Inject
-- Watchers
-- Template Refs
-- Data Fetching
+- **Textinterpolation** – Dynamisches Einfügen von Variablen und Ausdrücken in das Template mit {{ Mustache-Syntax }}.
+- **Attribute Binding** – Dynamisches Binden von HTML-Attributen mit v-bind für flexible UI-Anpassungen.
+- **Reaktivität (ref, reactive)** – Reaktive Datenstrukturen mit ref und reactive für automatische UI-Aktualisierung.
+- **Computed Properties** – Abgeleitete Werte, die sich automatisch aktualisieren, wenn abhängige Daten sich ändern.
+- **Komponenten** – Wiederverwendbare UI-Bausteine zur Strukturierung und Modularisierung der Anwendung.
+- **Props & Dynamic Props** – Übergabe von Daten an Kind-Komponenten, inkl. dynamischer Werte.
+- **Statische Props** – Feste Werte als Props an Komponenten übergeben.
+- **List Rendering** – Dynamisches Rendern von Listen mit v-for für Arrays und Objekte.
+- **Bedingte Darstellung (v-if, v-show)** – Elemente abhängig von Bedingungen ein- oder ausblenden.
+- **Slots & Fallback Slots** – Flexible Platzhalter für Inhalte in Komponenten, inkl. Standardinhalte.
+- **Named Slots** – Benannte Platzhalter für gezieltes Einfügen von Inhalten in Komponenten.
+- **Event Handling** – Reaktion auf Benutzerinteraktionen mit v-on (z.B. @click).
+- **Prop Drilling** – Weitergabe von Props über mehrere Komponentenebenen hinweg.
+- **Provide & Inject** – Daten zwischen weit entfernten Komponenten teilen, ohne Props zu verwenden.
+- **Watchers** – Reaktion auf Datenänderungen mit benutzerdefinierten Beobachtern.
+- **Template Refs** – Zugriff auf DOM-Elemente oder Komponenteninstanzen im Template.
+- **Data Fetching** – Laden von externen Daten (z.B. via API) und deren Integration in die App.
 
 ### Erweiterte Themen ✨
 - **Routing mit Vue Router** - Single Page Application Navigation
