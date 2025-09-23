@@ -24,6 +24,7 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 - **Watchers** – Reaktion auf Datenänderungen mit benutzerdefinierten Beobachtern.
 - **Template Refs** – Zugriff auf DOM-Elemente oder Komponenteninstanzen im Template.
 - **Data Fetching** – Laden von externen Daten (z.B. via API) und deren Integration in die App.
+- **Composables** – Wiederverwendbare Funktionen mit Vue's Composition API für geteilte stateful Logic.
 
 ### Erweiterte Themen ✨
 - **Routing mit Vue Router** - Single Page Application Navigation

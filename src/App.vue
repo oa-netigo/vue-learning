@@ -24,6 +24,7 @@ import Start from './topics/Start.vue';
 // import TemplateRefsExampleOne from './topics/TemplateRefsExampleOne.vue';
 // import TemplateRefsExampleTwo from './topics/TemplateRefsExampleTwo.vue';
 // import DataFetch from './topics/DataFetch.vue';
+import Composables from './topics/Composables.vue';
 
 // Erweiterte Themen
 // import Router from './topics/Router.vue';
@@ -36,7 +37,7 @@ import Start from './topics/Start.vue';
 <template>
   <!-- Basis Themen -->
 
-   <Start />
+   <!-- <Start /> -->
   <!-- <TextInterpolation /> -->
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
@@ -60,6 +61,7 @@ import Start from './topics/Start.vue';
   <!-- <TemplateRefsExampleOne /> -->
   <!-- <TemplateRefsExampleTwo /> -->
   <!-- <DataFetch /> -->
+  <Composables />
 
   <!-- Erweiterte Themen -->
 
