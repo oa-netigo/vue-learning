@@ -19,6 +19,7 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 - **Slots & Fallback Slots** – Flexible Platzhalter für Inhalte in Komponenten, inkl. Standardinhalte.
 - **Named Slots** – Benannte Platzhalter für gezieltes Einfügen von Inhalten in Komponenten.
 - **Event Handling** – Reaktion auf Benutzerinteraktionen mit v-on (z.B. @click).
+- **Emits** – Kind zu Eltern Kommunikation mit benutzerdefinierten Events ($emit).
 - **Prop Drilling** – Weitergabe von Props über mehrere Komponentenebenen hinweg.
 - **Provide & Inject** – Daten zwischen weit entfernten Komponenten teilen, ohne Props zu verwenden.
 - **Watchers** – Reaktion auf Datenänderungen mit benutzerdefinierten Beobachtern.
@@ -31,7 +32,8 @@ Hier findest du viele einfache Beispiele und Erklärungen rund um die Grundlagen
 - **Formulare & Validierung** - Umfassende Form-Handling mit Validierung
 - **Lifecycle Hooks im Detail** - Komponentenlebenszyklus verstehen
 - **Custom Directives** - Eigene v-Direktiven erstellen
-- **Dynamische Komponenten & Async Components** - Code Splitting und dynamisches Laden
+- **v-model Direktive** - Zwei-Wege-Datenbinding für Formulare und Komponenten
+- **Dynamische Komponenten & Async Components** - Code Splitting, dynamisches Laden und Suspense
 - **Transitions & Animationen** - Ansprechende UI-Übergänge
 
 ## Empfohlene Entwicklungsumgebung
@@ -62,16 +64,6 @@ npm run build
 
 Um ein bestimmtes Thema zu erkunden, uncomment einfach die entsprechende Komponente in `src/App.vue`:
 
-```vue
-<!-- Beispiel: Routing erkunden -->
-<RouterExample />
-
-<!-- Beispiel: Formulare & Validierung -->
-<FormsValidation />
-
-<!-- Beispiel: Lifecycle Hooks -->
-<LifecycleHooks />
-```
 
 ## Weitere Infos
 
