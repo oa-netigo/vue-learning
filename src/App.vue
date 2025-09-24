@@ -1,77 +1,92 @@
 <script setup>
-// Basis Themen
-import Start from './topics/Start.vue';
-// import TextInterpolation from './topics/TextInterpolation.vue';
-// import Component from './topics/Component.vue';
-// import AttributeBinding from './topics/AttributeBinding.vue';
-// import ReactivityExampleOne from './topics/ReactivityExampleOne.vue';
-// import ReactivityExampleTwo from './topics/ReactivityExampleTwo.vue';
-// import ReactivityExampleThree from './topics/ReactivityExampleThree.vue';
-// import ReactivityExampleFour from './topics/ReactivityExampleFour.vue';
-// import ComputedProperties from './topics/ComputedProperties.vue';
-// import ConditionalRenderingExampleOne from './topics/ConditionalRenderingExampleOne.vue';
-// import ConditionalRenderingExampleTwo from './topics/ConditionalRenderingExampleTwo.vue';
-// import ListRenderingExampleOne from './topics/ListRenderingExampleOne.vue';
-// import ListRenderingExampleTwo from './topics/ListRenderingExampleTwo.vue';
-// import VModelExampleOne from './topics/VModelExampleOne.vue';
-// import VModelExampleTwo from './topics/VModelExampleTwo.vue';
-// import Props from './topics/Props.vue';
-// import DynamicProps from './topics/DynamicProps.vue';
-// import Slots from './topics/Slots.vue';
-// import FallbackSlots from './topics/FallbackSlots.vue';
-// import NamedSlots from './topics/NamedSlots.vue';
-// import PropDrilling from './topics/PropDrilling.vue';
-// import ProvideAndInject from './topics/ProvideAndInject.vue';
-// import Watchers from './topics/Watchers.vue';
-// import TemplateRefsExampleOne from './topics/TemplateRefsExampleOne.vue';
-// import TemplateRefsExampleTwo from './topics/TemplateRefsExampleTwo.vue';
-// import DataFetch from './topics/DataFetch.vue';
-// import Composables from './topics/Composables.vue';
+/* Basics */
+// import Start from './topics/basics/0_Start.vue';
+// import TextInterpolation from './topics/basics/1_TextInterpolation.vue';
+// import AttributeBinding from './topics/basics/2_AttributeBinding.vue';
+// import ConditionalRenderingExampleOne from './topics/basics/3_ConditionalRenderingExampleOne.vue';
+// import ConditionalRenderingExampleTwo from './topics/basics/4_ConditionalRenderingExampleTwo.vue';
+// import ListRenderingExampleOne from './topics/basics/5_ListRenderingExampleOne.vue';
+// import ListRenderingExampleTwo from './topics/basics/6_ListRenderingExampleTwo.vue';
 
-// Erweiterte Themen
-// import Router from './topics/Router.vue';
-// import FormsValidation from './topics/FormsValidation.vue';
-// import LifecycleHooks from './topics/LifecycleHooks.vue';
-// import CustomDirectives from './topics/CustomDirectives.vue';
-// import DynamicComponents from './topics/DynamicComponents.vue';
+/* Reactivity */
+// import ReactivityExampleOne from './topics/reactivity/1_ReactivityExampleOne.vue';
+// import ReactivityExampleTwo from './topics/reactivity/2_ReactivityExampleTwo.vue';
+// import ReactivityExampleThree from './topics/reactivity/3_ReactivityExampleThree.vue';
+// import ReactivityExampleFour from './topics/reactivity/4_ReactivityExampleFour.vue';
+// import ComputedProperties from './topics/reactivity/5_ComputedProperties.vue';
+// import Watchers from './topics/reactivity/6_Watchers.vue';
+// import TemplateRefsExampleOne from './topics/reactivity/7_TemplateRefsExampleOne.vue';
+// import TemplateRefsExampleTwo from './topics/reactivity/8_TemplateRefsExampleTwo.vue';
+
+/* Components */
+// import Component from './topics/components/1_Component.vue';
+// import Props from './topics/components/2_Props.vue';
+// import DynamicProps from './topics/components/3_DynamicProps.vue';
+// import PropDrilling from './topics/components/4_PropDrilling.vue';
+// import ProvideAndInject from './topics/components/5_ProvideAndInject.vue';
+
+/* Slots */
+// import Slots from './topics/slots/1_Slots.vue';
+// import FallbackSlots from './topics/slots/2_FallbackSlots.vue';
+// import NamedSlots from './topics/slots/3_NamedSlots.vue';
+// import DynamicComponents from './topics/slots/4_DynamicComponents.vue';
+
+/* Lifecycle */
+// import LifecycleHooks from './topics/lifecycle/1_LifecycleHooks.vue';
+// import Composables from './topics/lifecycle/2_Composables.vue';
+
+/* Advanced */
+// import CustomDirectives from './topics/advanced/1_CustomDirectives.vue';
+// import FormsValidation from './topics/advanced/2_FormsValidation.vue';
+// import VModelExampleOne from './topics/advanced/3_VModelExampleOne.vue';
+// import VModelExampleTwo from './topics/advanced/4_VModelExampleTwo.vue';
+// import Router from './topics/advanced/5_Router.vue';
+// import DataFetch from './topics/advanced/6_DataFetch.vue';
+
 </script>
 
 <template>
-  <!-- Basis Themen -->
-
+  <!-- ### Basics ### -->
    <Start />
   <!-- <TextInterpolation /> -->
-  <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
+  <!-- <ConditionalRenderingExampleOne /> -->
+  <!-- <ConditionalRenderingExampleTwo  /> -->
+  <!-- <ListRenderingExampleOne /> -->
+  <!-- <ListRenderingExampleTwo /> -->
+
+  <!-- ### Reactivity ### -->
   <!-- <ReactivityExampleOne /> -->
   <!-- <ReactivityExampleTwo /> -->
   <!-- <ReactivityExampleThree /> -->
   <!-- <ReactivityExampleFour /> -->
   <!-- <ComputedProperties /> -->
-  <!-- <ConditionalRenderingExampleOne /> -->
-  <!-- <ConditionalRenderingExampleTwo  /> -->
-  <!-- <ListRenderingExampleOne /> -->
-  <!-- <ListRenderingExampleTwo /> -->
-  <!-- <VModelExampleOne /> -->
-  <!-- <VModelExampleTwo /> -->
-  <!-- <Props /> -->
-  <!-- <DynamicProps /> -->
-  <!-- <Slots /> -->
-  <!-- <FallbackSlots /> -->
-  <!-- <NamedSlots /> -->
-  <!-- <PropDrilling /> -->
-  <!-- <ProvideAndInject /> -->
   <!-- <Watchers /> -->
   <!-- <TemplateRefsExampleOne /> -->
   <!-- <TemplateRefsExampleTwo /> -->
-  <!-- <DataFetch /> -->
+
+  <!-- ### Components ### -->
+  <!-- <Component /> -->
+  <!-- <Props /> -->
+  <!-- <DynamicProps /> -->
+  <!-- <PropDrilling /> -->
+  <!-- <ProvideAndInject /> -->
+
+  <!-- ### Slots ### -->
+  <!-- <Slots /> -->
+  <!-- <FallbackSlots /> -->
+  <!-- <NamedSlots /> -->
+  <!-- <DynamicComponents /> -->
+
+  <!-- ### Lifecycle ### -->
+  <!-- <LifecycleHooks /> -->
   <!-- <Composables /> -->
 
-  <!-- Erweiterte Themen -->
-
-  <!-- <Router /> -->
-  <!-- <FormsValidation /> -->
-  <!-- <LifecycleHooks /> -->
+  <!-- ### Advanced ### -->
   <!-- <CustomDirectives /> -->
-  <!-- <DynamicComponents /> -->
+  <!-- <FormsValidation /> -->
+  <!-- <VModelExampleOne /> -->
+  <!-- <VModelExampleTwo /> -->
+  <!-- <Router /> -->
+  <!-- <DataFetch /> -->
 </template>
