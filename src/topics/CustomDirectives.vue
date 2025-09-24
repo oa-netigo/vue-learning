@@ -17,10 +17,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const text = ref('Hello World')
 const color = ref('#42b883')
-const isVisible = ref(true)
-const clickCount = ref(0)
 
 // 1. Focus Directive - Fokussiert Input beim Mount
 const vFocus = {

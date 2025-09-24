@@ -13,6 +13,8 @@ import Start from './topics/Start.vue';
 // import ConditionalRenderingExampleTwo from './topics/ConditionalRenderingExampleTwo.vue';
 // import ListRenderingExampleOne from './topics/ListRenderingExampleOne.vue';
 // import ListRenderingExampleTwo from './topics/ListRenderingExampleTwo.vue';
+// import VModelExampleOne from './topics/VModelExampleOne.vue';
+// import VModelExampleTwo from './topics/VModelExampleTwo.vue';
 // import Props from './topics/Props.vue';
 // import DynamicProps from './topics/DynamicProps.vue';
 // import Slots from './topics/Slots.vue';
@@ -24,7 +26,7 @@ import Start from './topics/Start.vue';
 // import TemplateRefsExampleOne from './topics/TemplateRefsExampleOne.vue';
 // import TemplateRefsExampleTwo from './topics/TemplateRefsExampleTwo.vue';
 // import DataFetch from './topics/DataFetch.vue';
-import Composables from './topics/Composables.vue';
+// import Composables from './topics/Composables.vue';
 
 // Erweiterte Themen
 // import Router from './topics/Router.vue';
@@ -37,7 +39,7 @@ import Composables from './topics/Composables.vue';
 <template>
   <!-- Basis Themen -->
 
-   <!-- <Start /> -->
+   <Start />
   <!-- <TextInterpolation /> -->
   <!-- <Component /> -->
   <!-- <AttributeBinding /> -->
@@ -50,6 +52,8 @@ import Composables from './topics/Composables.vue';
   <!-- <ConditionalRenderingExampleTwo  /> -->
   <!-- <ListRenderingExampleOne /> -->
   <!-- <ListRenderingExampleTwo /> -->
+  <!-- <VModelExampleOne /> -->
+  <!-- <VModelExampleTwo /> -->
   <!-- <Props /> -->
   <!-- <DynamicProps /> -->
   <!-- <Slots /> -->
@@ -61,7 +65,7 @@ import Composables from './topics/Composables.vue';
   <!-- <TemplateRefsExampleOne /> -->
   <!-- <TemplateRefsExampleTwo /> -->
   <!-- <DataFetch /> -->
-  <Composables />
+  <!-- <Composables /> -->
 
   <!-- Erweiterte Themen -->
 
