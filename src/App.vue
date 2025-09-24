@@ -37,9 +37,9 @@ import Start from './topics/basics/0_Start.vue';
 
 /* Advanced */
 // import CustomDirectives from './topics/advanced/1_CustomDirectives.vue';
-// import FormsValidation from './topics/advanced/2_FormsValidation.vue';
-// import VModelExampleOne from './topics/advanced/3_VModelExampleOne.vue';
-// import VModelExampleTwo from './topics/advanced/4_VModelExampleTwo.vue';
+// import VModelExampleOne from './topics/advanced/2_VModelExampleOne.vue';
+// import VModelExampleTwo from './topics/advanced/3_VModelExampleTwo.vue';
+// import FormsValidation from './topics/advanced/4_FormsValidation.vue';
 // import Router from './topics/advanced/5_Router.vue';
 // import DataFetch from './topics/advanced/6_DataFetch.vue';
 
