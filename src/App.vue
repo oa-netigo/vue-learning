@@ -3,10 +3,11 @@
 import Start from './topics/basics/0_Start.vue';
 // import TextInterpolation from './topics/basics/1_TextInterpolation.vue';
 // import AttributeBinding from './topics/basics/2_AttributeBinding.vue';
-// import ConditionalRenderingExampleOne from './topics/basics/3_ConditionalRenderingExampleOne.vue';
-// import ConditionalRenderingExampleTwo from './topics/basics/4_ConditionalRenderingExampleTwo.vue';
-// import ListRenderingExampleOne from './topics/basics/5_ListRenderingExampleOne.vue';
-// import ListRenderingExampleTwo from './topics/basics/6_ListRenderingExampleTwo.vue';
+// import EventHandling from './topics/basics/3_EventHandling.vue';
+// import ConditionalRenderingExampleOne from './topics/basics/4_ConditionalRenderingExampleOne.vue';
+// import ConditionalRenderingExampleTwo from './topics/basics/5_ConditionalRenderingExampleTwo.vue';
+// import ListRenderingExampleOne from './topics/basics/6_ListRenderingExampleOne.vue';
+// import ListRenderingExampleTwo from './topics/basics/7_ListRenderingExampleTwo.vue';
 
 /* Reactivity */
 // import ReactivityExampleOne from './topics/reactivity/1_ReactivityExampleOne.vue';
@@ -24,6 +25,7 @@ import Start from './topics/basics/0_Start.vue';
 // import DynamicProps from './topics/components/3_DynamicProps.vue';
 // import PropDrilling from './topics/components/4_PropDrilling.vue';
 // import ProvideAndInject from './topics/components/5_ProvideAndInject.vue';
+import Emit from './topics/components/6_Emits.vue';
 
 /* Slots */
 // import Slots from './topics/slots/1_Slots.vue';
@@ -47,9 +49,10 @@ import Start from './topics/basics/0_Start.vue';
 
 <template>
   <!-- ### Basics ### -->
-   <Start />
+   <!-- <Start /> -->
   <!-- <TextInterpolation /> -->
   <!-- <AttributeBinding /> -->
+  <!-- <EventHandling /> -->
   <!-- <ConditionalRenderingExampleOne /> -->
   <!-- <ConditionalRenderingExampleTwo  /> -->
   <!-- <ListRenderingExampleOne /> -->
@@ -71,6 +74,7 @@ import Start from './topics/basics/0_Start.vue';
   <!-- <DynamicProps /> -->
   <!-- <PropDrilling /> -->
   <!-- <ProvideAndInject /> -->
+  <Emit />
 
   <!-- ### Slots ### -->
   <!-- <Slots /> -->
