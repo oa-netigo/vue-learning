@@ -25,7 +25,7 @@ import Start from './topics/basics/0_Start.vue';
 // import DynamicProps from './topics/components/3_DynamicProps.vue';
 // import PropDrilling from './topics/components/4_PropDrilling.vue';
 // import ProvideAndInject from './topics/components/5_ProvideAndInject.vue';
-import Emit from './topics/components/6_Emits.vue';
+// import Emit from './topics/components/6_Emits.vue';
 
 /* Slots */
 // import Slots from './topics/slots/1_Slots.vue';
@@ -49,7 +49,7 @@ import Emit from './topics/components/6_Emits.vue';
 
 <template>
   <!-- ### Basics ### -->
-   <!-- <Start /> -->
+   <Start />
   <!-- <TextInterpolation /> -->
   <!-- <AttributeBinding /> -->
   <!-- <EventHandling /> -->
@@ -74,7 +74,7 @@ import Emit from './topics/components/6_Emits.vue';
   <!-- <DynamicProps /> -->
   <!-- <PropDrilling /> -->
   <!-- <ProvideAndInject /> -->
-  <Emit />
+  <!-- <Emit /> -->
 
   <!-- ### Slots ### -->
   <!-- <Slots /> -->
