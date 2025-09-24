@@ -1,6 +1,6 @@
 <script setup>
 /* Basics */
-// import Start from './topics/basics/0_Start.vue';
+import Start from './topics/basics/0_Start.vue';
 // import TextInterpolation from './topics/basics/1_TextInterpolation.vue';
 // import AttributeBinding from './topics/basics/2_AttributeBinding.vue';
 // import ConditionalRenderingExampleOne from './topics/basics/3_ConditionalRenderingExampleOne.vue';
